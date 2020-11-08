@@ -1,0 +1,27 @@
+.row__poster{
+
+     object-fit: contain;
+     width:100%;
+      max-height:240px;
+      margin-right:10px;          
+      transition:450ms;    /* decides the speed it will grow or shrink when changes are applied */
+}
+.row__poster:hover{
+      transform: scale(1.1);   /*increase the size a little when the image is hovered  */
+}
+.row__posters{
+     display:flex;     /* display the movie poster in horizontal format */
+     overflow-y: hidden;/*disables the scroll functionality for the y axis */ 
+     overflow-x: scroll;/*add a scrolls to the row in horizontal direction*/
+     padding:10px;
+
+}
+
+.row__posters::-webkit-scrollbar{
+      display:none; 
+}
+/*
+.row__posterlarge{
+      max-height:240px;
+}
+*/
